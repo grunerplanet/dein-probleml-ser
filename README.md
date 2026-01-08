@@ -11,6 +11,727 @@ Dein Problemlöser
         src="https://assets.calendly.com/assets/external/widget.js"
         async>
 </script>
+<style>
+
+  /* RESET */
+* {
+
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px!;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  color: #222;  }
+
+h1{
+  margin: 0px;
+}
+
+svg{
+  display: block;
+}
+
+/* GLOBAL */
+
+
+h1{
+  font-size: 25px;
+}
+
+.overlap{
+  width: 100%;
+  position: absolute;
+  left: 30%;
+  top: -5%;
+  display: none;
+}
+
+
+
+.links{
+  width: 100%;
+  padding: 30px 20px;
+}
+
+.slider-item {
+  background: #00000016;
+  min-height: 500px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 16px;
+  text-align: center;
+  margin: 0 15px;
+  flex: 0 0 100%;
+}
+
+.content{
+  background-image: url('green_plan.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+width: 250px;
+height: 250px;
+margin-top: 60px;
+border-radius: 30px;
+}
+
+.display{
+  background-image: url('./germanyLow.svg');
+  background-repeat: no-repeat;
+}
+
+.txt-header{
+  font-size: 40px;
+    color: rgb(34, 34, 34);
+    line-height: 40px;
+    text-align: left;
+  }
+
+  .uberschrift{
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  
+  
+.marke{
+  font-size: 30px;
+  color: white;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+
+
+.servicetechnik{
+  height: 200px;
+  width: 160px;
+  border-radius: 15px;
+  border: 5px black;
+  margin: 30px 0px
+}
+
+.re{
+  overflow: hidden;
+}
+
+
+.super{
+  max-height: 400px;
+  opacity: 0.7;
+  transform: rotate(-30deg);
+  position: absolute;
+  bottom: -15%;
+  left: 0%;
+}
+
+.last{
+  font-size: 30px;
+  color: white;
+  text-align: left;
+  text-transform: uppercase;
+  z-index: 1 !important;
+}
+
+@media (min-width: 768px) {
+  .heins{
+    font-size: 40px;
+  }
+
+  .servicetechnik{
+    height: 320px;
+    width: 245px;
+  }
+
+  .last{
+    font-size: 50px;
+  }
+
+  .super{
+    left: 30%;
+  }
+  
+  
+
+  .uberschrift{
+    font-size: 30px;
+  }
+
+  .marke{
+    font-size: 50px;
+  }
+  
+
+  .links{
+    width: 50%;
+    padding: 30px 20px;
+  }
+
+  .overlap{
+    width: 50%;
+    position: absolute;
+    left: 60%;
+    top: -5%;
+    display: block;
+  }
+
+  .slider-item {
+    max-height: 500px;
+  }
+
+  .content{
+  width: 400px;
+  height: 400px;
+}
+
+.display{
+  overflow: visible;
+  padding-top: 150px;
+}
+
+.txt-header{
+  font-size: 70px;
+  line-height: 70px;
+  }
+  
+}
+
+
+
+#counternew{
+ border: 1px dotted greenyellow;
+ width: 50%;
+ height: 5%;
+ padding: 20px 20px;
+ font-weight: bold;
+ font-size: 30px;
+ border-radius: 10px;
+ text-align: center;
+ color: white;
+ background: #03a60667;
+}
+
+.bg{
+background: #03a606d4 !important;
+ }
+
+
+
+.kondition{
+  padding: 20px 40px;
+  color: rgb(53, 52, 52);
+  font-style: oblique;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.ideo{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: left;
+  color: white;
+}
+.overlap{
+  width: 50%;
+  position: absolute;
+  left: 60%;
+  top: -5%;
+}
+
+
+
+
+.germany{
+  z-index: -1;
+  background-image: url('./germanyLow.svg');
+  background-position: center;
+}
+
+
+.container {
+  max-width: 1200px;
+  padding: 1rem;
+  position: relative;
+}
+
+.container-header {
+  padding: 40px;
+  background-image: url('schräg.svg');
+  z-index: 0;
+  position: relative;
+}
+
+
+
+
+
+
+.float{
+    float: left;
+}
+
+.img{
+    height:400px;
+}
+
+.icon-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.slider-content{
+  float: left;
+  padding: 40px 40px;
+}
+
+.icon-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 16px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bttn{
+ padding: 10px 25px;
+ background:green;
+ border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  z-index: 999;
+  pointer-events: auto;
+  cursor: pointer;
+  border-style: none;
+}
+
+.prev{
+  left: 5%;
+}
+
+h3{
+  margin: 20px;
+}
+
+.next{
+  right: 10%;
+}
+
+.btn {
+  display: inline-block;
+  background: #2563eb;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.btn-light {
+  background: #fff;
+  color: #2563eb;
+}
+
+/* HEADER */
+.header {
+  padding: 0px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.logo-rec{
+  height: 170px;
+  width: 170px;
+  margin-top: 30px;
+}
+
+.line {
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  animation: draw 3s ease-in-out infinite;
+}
+
+/* Zeitversatz */
+.line1 { animation-delay: 0s; }
+.line2 { animation-delay: 1s; }
+.line3 { animation-delay: 2s; }
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 3000;
+    opacity: 1;
+  }
+  40% {
+    stroke-dashoffset: 0;
+  }
+  80% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 3000;
+    opacity: 0;
+  }
+}
+
+.black{
+  background-color: red;
+}
+
+
+/* Grundlayout */
+
+.slider-container {
+  width: 100%;
+  position: relative;
+}
+
+/* Slider-Track */
+.slider-track {
+  display: flex;
+  padding: 20px;
+}
+.slider-viewport{
+  overflow: hidden;
+  width: 100%;
+}
+
+
+
+/* einzelne Cards */
+.slider-item {
+  background: #00000016;
+  max-height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 16px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 15px;
+  min-width: 100%;
+  flex-shrink: 0;
+}
+
+
+
+.slider-item img {
+  border-radius: 6px;
+}
+
+.cont {
+  display: flex;
+  gap: 20px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+
+}
+
+.box {
+  flex: 1;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+
+.sam {
+  transform: rotate(-20deg);
+  opacity: 0.8;
+}
+
+.img{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 200px;
+}
+
+
+.rel{
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-video{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+.hero-sec .hero-right{
+  min-height: 500px;
+  background-image: url('./platine-Photoroom.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+  background-size: 70%;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+.pumpe{
+  height: 175px;
+  position: absolute;
+  left: -10%;
+  bottom: -5%;
+  transform: rotate(45deg);
+}
+
+
+.platine{
+  z-index: -1%;
+  height: 50px;
+}
+
+/* Tablet & Mobile */
+@media (max-width: 768px) {
+  .cont {
+    flex-direction: column;
+  }
+}
+
+.hero-container {
+  display: flex;
+  gap: 20px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.hero-content{
+  background-image: url('./26436.svg');
+  background-size: 40%;
+  min-height: 200px;
+}
+
+.hero-left {
+  flex: 1;
+  padding: 30px;
+  background: url('./26436.svg');
+  background: rgba(12, 12, 12, 0.213);
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.hero-right {
+  flex: 1;
+  padding: 30px;
+  background: rgba(12, 12, 12, 0.213);
+  background-image: url('152876.svg');
+  border-radius: 12px;
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+.hero-overlap{
+  flex: 1;
+  padding: 30px;
+  background: rgba(12, 12, 12, 0.213);
+  background-image: url('152874.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 12px;
+  font-size: 18px;
+}
+
+
+
+
+.deals{
+  font-size:50px;
+  font-weight: bolder;
+  padding: 20px 40px;
+  color: rgb(34, 34, 34);
+}
+
+/* Tablet & Mobile */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+  }
+}
+
+
+/* Navigation Buttons */
+
+
+
+/* NAVIGATION */
+
+
+
+
+
+.price{
+    text-align: center;
+}
+
+.txt{
+    color: black;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 20px 20px;
+}
+
+
+/* HERO */
+.hero {
+  overflow: hidden;
+  background: radial-gradient(circle,rgba(77, 171, 0, 1) 0%, rgba(31, 120, 70, 1) 77%, rgba(3, 99, 40, 1) 100%);
+  position: relative;
+}
+
+
+
+
+.hero p {
+  margin-top: 1rem;
+  max-width: 500px;
+}
+
+/* FEATURES */
+.features {
+  padding: 3rem 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+#cards{
+  position: relative;
+}
+
+
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  width: 33,3%;
+}
+
+.split {
+  background: darkblue;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  width: 100%;
+}
+
+/* CTA */
+.cta {
+  color: #fff;
+  text-align: center;
+  padding: 20px 0px
+}
+
+.content{
+    background-image: url('green_plan.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  margin-top: 60px;
+  border-radius: 30px;
+}
+
+
+/* Funken */
+.spark {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(circle, #03a605, #1eff00);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: spark-fade 0.8s ease-out forwards;
+  cursor: pointer;
+}
+
+@keyframes spark-fade {
+  from {
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0) translate(var(--x), var(--y));
+    opacity: 0;
+  }
+}
+
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #f1f1f1;
+}
+
+
+  .navigation {
+    display: flex;
+    border-radius: 5px;
+    background-color: none;
+    border: 1px thick greenyellow;
+
+  }
+
+a{
+ padding: 0px 5px;
+ margin: 0;
+}
+
+</style>
 </head>
 <body>
 
@@ -468,7 +1189,112 @@ Dein Problemlöser
   <footer class="footer">
     <p>© 2022-2025 Grüner Planet</p>
   </footer>
- <script src="script.js"></script>
+ <script>
+   document.addEventListener('DOMContentLoaded', () => {
+
+  const viewport = document.querySelector('.slider-viewport');
+  const track    = document.querySelector('.slider-track');
+  const nextBtn  = document.querySelector('.next');
+  const prevBtn  = document.querySelector('.prev');
+
+  let slides = track.querySelectorAll('.slider-item');
+
+  /* =========================
+     KLONE
+  ========================= */
+  const firstClone = slides[0].cloneNode(true);
+  const lastClone  = slides[slides.length - 1].cloneNode(true);
+
+  track.appendChild(firstClone);
+  track.insertBefore(lastClone, slides[0]);
+
+  slides = track.querySelectorAll('.slider-item');
+
+  let index = 1;
+  let isAnimating = false;
+
+  function slideWidth() {
+    return viewport.offsetWidth;
+  }
+
+  /* STARTPOSITION */
+  track.style.transform = `translateX(-${slideWidth() * index}px)`;
+
+  function move() {
+    isAnimating = true;
+    track.style.transition = 'transform 0.4s ease';
+    track.style.transform = `translateX(-${slideWidth() * index}px)`;
+  }
+
+  nextBtn.addEventListener('click', () => {
+    if (isAnimating) return;
+    index++;
+    move();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    if (isAnimating) return;
+    index--;
+    move();
+  });
+
+  track.addEventListener('transitionend', () => {
+    track.style.transition = 'none';
+
+    if (index === slides.length - 1) {
+      index = 1;
+    }
+
+    if (index === 0) {
+      index = slides.length - 2;
+    }
+
+    track.style.transform = `translateX(-${slideWidth() * index}px)`;
+    isAnimating = false;
+  });
+
+  window.addEventListener('resize', () => {
+    track.style.transition = 'none';
+    track.style.transform = `translateX(-${slideWidth() * index}px)`;
+  });
+
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  const counters = document.querySelectorAll('#counternew');
+  const duration = 2000; // 5 Sekunden
+
+  counters.forEach(counter => {
+    const end = parseInt(counter.dataset.target, 10);
+    let startTime = null;
+
+    function animate(timestamp) {
+      if (!startTime) startTime = timestamp;
+      const progress = timestamp - startTime;
+
+      const value = Math.min(
+        Math.floor((progress / duration) * end),
+        end
+      );
+
+      counter.textContent = value.toLocaleString('de-DE');
+
+      if (progress < duration) {
+        requestAnimationFrame(animate);
+      } else {
+        counter.textContent = end.toLocaleString('de-DE');
+      }
+    }
+
+    requestAnimationFrame(animate);
+  });
+
+});
+
+
+ </script>
 </body>
 </html>
 
